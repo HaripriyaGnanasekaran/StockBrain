@@ -17,7 +17,7 @@
 <!-- /vscode-markdown-toc -->
 
 ##  1. <a name='AboutStockBrain'></a>About StockBrain
-StockBrain 0.0.0 is the beta version of DeepLearning algorithm to predict the stock price. We demonstrate the ability of the model over NYSE:RDS.A (Royal Dutch Shell A). StockBrain uses Long Short Term Memory (LSTM) from Keras module. This module requires a backend package like Tensorflow, Theano or CNTK. We recommend to use Theano backend. Keras uses tensorflow by default. To change the keras backend visit [Keras website](https://www.keras.org)
+StockBrain 0.0.0 is the beta version of DeepLearning algorithm to predict the stock price. We demonstrate the ability of the model over NYSE:RDS.A (Royal Dutch Shell A). StockBrain is programmed in [Python 3.8.2](https://www.python.org) and requires the following packages: [keras](https://keras.io/), [scipy](https://www.scipy.org/), [scikit-learn](https://scikit-learn.org/stable/), [pandas](http://pandas.pydata.org/) and [matplotlib](https://matplotlib.org/). This module requires a backend package like [Tensorflow](https://www.tensorflow.org/), [Theano](http://deeplearning.net/software/theano/) or [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/). We recommend to use Theano backend. Keras uses tensorflow by default. To change the keras backend visit [Keras website](https://www.keras.org)
 
 Tested on.  
 * OS: Windows 10  
