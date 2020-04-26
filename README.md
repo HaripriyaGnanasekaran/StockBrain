@@ -7,12 +7,12 @@ Version: **StockBrain 0.0.0 (Telencephalon)**
 
 Todo:  
 ```
-* [  ] Clean up source code.  
-* [  ] Generalize source code.
-* [  ] Obtain user input (stock name).
-* [  ] Add results and create portfolio.
-* [  ] Quantify model for all 10 stocks.
-* [  ] Optimize using Tensorflow.
-* [  ] Publish results in arXiv
-* [  ] Check Omer Berat Sezer (TOBB University of Economics stuff?!)
+* [ - ] Clean up source code.  
+* [ - ] Generalize source code.
+* [ - ] Obtain user input (stock name).
+* [ - ] Add results and create portfolio.
+* [ - ] Quantify model for all 10 stocks.
+* [ - ] Optimize using Tensorflow.
+* [ - ] Publish results in arXiv
+* [ X ] Check Omer Berat Sezer (TOBB University of Economics stuff?!)
 ```
