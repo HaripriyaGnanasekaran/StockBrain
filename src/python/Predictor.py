@@ -1,0 +1,3 @@
+"""
+Predictor will predict future
+"""
