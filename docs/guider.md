@@ -34,6 +34,30 @@ Tested on.
 
 ###  2.1. <a name='Variablenomenclature'></a>Variable nomenclature
 
+```python
+Variable name			Type
+
+it_name					Integer 
+ft_name					Float
+st_name					String
+lt_name					list
+tp_name					tuple
+dt_name					dictionary
+
+df_name					pandas.DataFrame
+ar_name					numpy.array
+ot_name					objects of classes/modules
+ot_pd					pandas object
+ot_np					numpy object
+ot_plt					matplotlib.pyplot object 
+ot_sns					seaborn object 
+
+it_name_lastname		Integer with a two names
+it_length_array1		Array 1 length stored as integer
+it_length_array2		Array 2 length stored as integer
+tp_shape_df_source		Tuple storing shape of pandas.DataFrame called source.
+
+```
 1. All dataframes will be named as ```df_variablename```
 2. All numpy arrays will be named as ```ar_variablename```
 3. All integer, float and string objects will be named as ```in_, ft_, st_```
