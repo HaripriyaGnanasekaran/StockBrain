@@ -34,7 +34,7 @@ Tested on.
 
 ###  2.1. <a name='Variablenomenclature'></a>Variable nomenclature
 
-```python
+```
 Variable name			Type
 
 it_name					Integer 
@@ -52,10 +52,10 @@ ot_np					numpy object
 ot_plt					matplotlib.pyplot object 
 ot_sns					seaborn object 
 
-it_name_lastname		Integer with a two names
-it_length_array1		Array 1 length stored as integer
-it_length_array2		Array 2 length stored as integer
-tp_shape_df_source		Tuple storing shape of pandas.DataFrame called source.
+it_name_lastname			Integer with a two names
+it_length_array1			Array 1 length stored as integer
+it_length_array2			Array 2 length stored as integer
+tp_shape_df_source			Tuple storing shape of pandas.DataFrame called source.
 
 ```
 1. All dataframes will be named as ```df_variablename```
