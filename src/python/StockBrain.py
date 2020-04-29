@@ -1,11 +1,10 @@
 """
 StockBrain 0.0.0 (also called as telencephalon)
 """
+from Reader import StockReader
 
-import math
-import numpy as ot_np
-import pandas as ot_pd
-from keras.models import Sequential
-from keras.layers import Dense, LSTM
-import matplotlib.pyplot as ot_plt
-
+ot_source = StockReader('yahoo', 'RDS-A', '01-03-2000', '01-04-2020')
+if ot_source.check_input() == True: 
+    df_source = ot_source.read_stock()
+else:
+    print ('Unsuccessful!')
