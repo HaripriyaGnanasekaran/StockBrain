@@ -23,7 +23,7 @@ Please create your own branch and start adding features that might benifit the p
 ###  1.1. <a name='Variablenomenclature'></a>Variable nomenclature
 
 ```
-Variable name			Type
+Variable name				Type
 
 it_name					Integer 
 ft_name					Float
@@ -60,7 +60,7 @@ tp_shape_df_source			Tuple storing shape of pandas.DataFrame called source.
 
 ##  3. <a name='Moduledefinitions'></a>Module definitions
 
-1. Module names should be short and all lower case. To avoid confusion with existing python modules we make our modules as verbs (since they perfom a action). eg. ``` reader, writer, downloader, cleaner,  plotter, printer, solver, modeller, executer.```
-3. Try to avoid module names with more than one word. If necessary used "```_```". eg. ```place_holder, data_cleaner, array_sorter.```
-2. PEP places a naming format for classes as ClassName
+1. Module names should start with Upper case letter and continue with lower case letters. To avoid confusion with existing python modules we make our modules as verbs (since they perfom a action). eg. ``` Reader, Writer, Downloader, Cleaner,  Plotter, Printer, Solver, Modeller, Executer, Validator, Predictor.```
+
+Take a look at the existing ```src/python/*.py``` to get an idea about naming classes and functions (methods). Classes are usually named using FirstnameLastname convention. Methods/functions are named completely in smaller cases with ```_``` connecting two or more words.
 
