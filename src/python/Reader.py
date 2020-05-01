@@ -54,4 +54,25 @@ class StockReader:
         Reading stock using data_reader.
         """
         df_source = ot_web.DataReader(self.st_sname, self.st_source, self.st_start, self.st_end, retry_count=10, pause=0.1)
-        return df_source
+        return df_source 
+
+    def read_file(self):
+        pass
+
+    def read_news(self, **kwargs):
+        pass
+
+    def read_webpage(self, **kwargs):
+        pass
+
+    def read_reports(self):
+        pass
+
+    def read_balance_sheet(self):
+        pass
+
+    def read_income_statement(self):
+        pass
+
+    def read_others(self):
+        pass
