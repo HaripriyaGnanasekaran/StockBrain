@@ -1,8 +1,13 @@
 """
 StockBrain 0.0.0 (also called as telencephalon)
 """
-from Reader import StockReader
+import pandas as md_pd
+from Reader import Read 
 
-ot_source = StockReader('yahoo', 'RDS-A', '01-03-2000', '01-04-2020')
-df_source = ot_source.read_stock()
+# read stock 
 
+cs_read = Read('stock')
+df_source = cs_read.read_stock('yahoo', 'RDS-A', '01-03-2000', '01-04-2020')
+print(df_source.head())
+
+# stock read successfully!
