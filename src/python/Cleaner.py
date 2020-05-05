@@ -9,6 +9,6 @@ class Preprocessor:
     def __init__(self,df_source):
         self.df_source = df_source
 
-    def choose(self,feature):
-        df_data = self.df_source[feature]
+    def choose(self,st_feature):
+        df_data = self.df_source[st_feature]
         return df_data
