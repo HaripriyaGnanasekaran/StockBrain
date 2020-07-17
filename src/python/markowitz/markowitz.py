@@ -1,9 +1,89 @@
-import pandas_datareader.data as web
-import matplotlib.pyplot as plt
-import numpy as np
-import scipy.stats as stats
-import math
-import pandas as pd
+def libraries():
+    '''
+    Libraries are being imported here.
+
+    Use this function to add more libraries that might be needed. 
+    Use a variable to refer to the library and return the object.  
+    '''
+    import math as mt
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import pandas as pd
+    import pandas_datareader.data as web
+    import scipy.stats as stats
+    return mt, plt, np, pd, web, stats
+
+
+def input_parameter(key, *args):
+    '''
+    Input parameters defined. 
+
+    TODO: currently hardcoded the input parameters. In future version, an input file
+    should be providing the parameters. This modules should read the input file
+    and return the parameters that matches the *args.
+    '''
+
+    if key == 'stocklist':
+        stocklist = ['GOOG', 'SPY', 'RDS-A', 'BABA', 'AMZN',
+                     'ENPH', 'TSLA', 'MSFT', 'MA', 'AAPL']
+        return stocklist
+    elif key == 'interval':
+        interval = 'm'
+        return interval
+    elif key == 'start_date':
+        start_date = '01/01/2000'
+        return start_date
+    elif key == 'weight':
+        for value in args:
+            denominator = value
+        return 1.0/denominator
+    else:
+        message = 'KeyWord Error: no matching key found'
+        print(message)
+        return None
+
+
+def passed(linenumber):
+    '''
+    Passed checks if the program passes particular line.
+
+    param: linenumber --> Pass the line number when called.
+    Function returns None.
+    '''
+    print(f'Program passed line number: {linenumber}')
+    return None
+
+
+def fill_fundamentals_inside(weights, returns, risks, basics):
+    stocklist, interval, start, weight = basics[0], basics[1], basics[2], basics[3]
+    for name in stocklist:
+        df = web.get_data_yahoo(name, start, interval=interval)
+        close = df['Close']
+        change = close.pct_change()
+        mu = change.mean()
+        sigma = change.std()
+
+        weights.append(weight)
+        returns.append(mu)
+        risks.append(sigma)
+
+    return weights, returns, risks
+
+
+if __name__ == "__main__":
+    mt, plt, np, pd, web, stats = libraries()
+    stocklist = input_parameter('stocklist')
+    interval = input_parameter('interval')
+    start_date = input_parameter('start_date')
+    weight = input_parameter('weight', len(stocklist))
+    basics = [stocklist, interval, start_date, weight]
+    passed(55)
+
+    weight_list, avg_return, avg_std = [], [], []
+    weight_list, avg_return, avg_std = fill_fundamentals_inside(
+        weight_list, avg_return, avg_std, basics)
+
+    input('testing!')
 
 pf_return = []
 pf_risk = []
